@@ -9,8 +9,8 @@ int NumPartCut, NumGasNew, NumPartNew, TotNumPart, *PartFlag;
 double MTot, CMVel[3];
 FILE *file;
 
-void cut_block(int block);
-void write_block(int block);
+void remove_part_block(int block);
+void write_part_block(int block);
 
 
 void remove_part()
@@ -176,7 +176,7 @@ void remove_part()
 }
 
 
-void cut_block(int block)
+void remove_part_block(int block)
 {
   int i, j;
   double fac;
@@ -431,7 +431,7 @@ void cut_block(int block)
 }
 
 
-void write_block(int block)
+void write_part_block(int block)
 {
   int i, blksize;
 
