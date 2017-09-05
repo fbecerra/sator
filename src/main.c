@@ -39,6 +39,9 @@ int main(int argc, char **argv)
       if(All.Usage == 4)
 	halo();
 
+      if(All.Usage == 8)
+        remove_part();
+
       if(All.Usage == 9)
 	cut_region();
 

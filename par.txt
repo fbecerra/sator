@@ -44,6 +44,11 @@ RadBins			100
 MBEBins	      		50
 
 
+% Remove particles (Usage: 8)
+
+RemoveCosm		0
+
+
 % Cut region (Usage: 9)
 
 CutCosm			0

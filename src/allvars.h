@@ -177,6 +177,8 @@ extern struct GlobData
   char CutBase[MAX_STRING_LEN];
   double CutSize;
 
+  char RemoveBase[MAX_STRING_LEN];
+
   double RadMin;
 
   double MBEMin;
@@ -214,6 +216,8 @@ extern struct GlobData
   double ShiftX;
   double ShiftY;
   double ShiftZ;
+
+  int RemoveCosm;
 
   char BlockFileCut[MAX_STRING_LEN];
   int CutCosm;

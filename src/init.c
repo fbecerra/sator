@@ -124,6 +124,14 @@ void get_args(int argc, char **argv)
       All.ShiftZ = atof(argv[9]);
     }
 
+  if(All.Usage == 8)
+    {
+      if(argc < 6)
+        terminate_args();
+
+      strcpy(All.RemoveBase, argv[5]);
+    }
+
   if(All.Usage == 9)
     {
       if(argc < 7)
@@ -257,7 +265,7 @@ void init_snap()
 
   if(ThisTask == 0)
     {
-      if(All.Usage == 9)
+      if(All.Usage == 8 || All.Usage == 9)
 	sprintf(fname, "%s", All.BlockFileCut);
       else
 	sprintf(fname, "%s", All.BlockFile);

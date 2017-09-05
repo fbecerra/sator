@@ -112,6 +112,13 @@ void read_params()
 	  id[i++] = INT;
 	}
 
+      if(All.Usage == 8)
+        {
+          strcpy(tag[i], "RemoveCosm");
+          addr[i] = &All.RemoveCosm;
+          id[i++] = INT;
+        }
+
       if(All.Usage == 9)
 	{
 	  strcpy(tag[i], "CutCosm");
