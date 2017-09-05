@@ -1,0 +1,50 @@
+
+% General
+
+MaxMemSize		1200
+
+
+% Snapshot
+
+FileSystem		0
+FlagDouble		1
+LengthUnit		1			0 = kpc, 1 = pc, 2 = au
+ComovingUnits		0
+
+FlagCenter		1
+CenterX			0.0164
+CenterY			0.0172
+CenterZ			0.0167
+FlagRotate		0
+
+
+% Image (Usage: 0)
+
+ImgFlagScreenRatio	0
+ImgXBins		1024
+ImgFlagMovie		0
+
+
+% Phase space (Usage: 1)
+
+PSpaceBins		1000
+PSpaceXMin		0.
+PSpaceXMax		0.
+PSpaceYMin		0.
+PSpaceYMax		0.
+
+
+% Radial (Usage: 2)
+
+RadBins			100
+
+
+% MBE (Usage: 3)
+
+MBEBins	      		50
+
+
+% Cut region (Usage: 9)
+
+CutCosm			0
+CutDM			0
