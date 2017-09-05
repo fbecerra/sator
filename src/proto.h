@@ -26,6 +26,8 @@ void radial();
 
 void halo();
 
+void remove_part();
+
 void cut_region();
 
 void collapse();

@@ -13,7 +13,7 @@ void cut_block(int block);
 void write_block(int block);
 
 
-void cut_region()
+void remove_part()
 {
   char snapdir[MAX_STRING_LEN], fill[SIZE_FILL];
   int i, block, blksize, dummy;
