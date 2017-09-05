@@ -1,4 +1,8 @@
 build/
 python/*.pyc
 
+#Executables
 sator
+
+# OSX files
+.DS_Store
