@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/n/home02/fbecerra/arepo_old/sator/python/test.py", line 15, in <module>
-    print g.pos[0:10], g.vel[0:10], g.id[0:10], g.mass[0:10] 
-AttributeError: readsnap instance has no attribute 'pos'
