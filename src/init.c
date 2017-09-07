@@ -124,14 +124,6 @@ void get_args(int argc, char **argv)
       All.ShiftZ = atof(argv[9]);
     }
 
-  if(All.Usage == 8)
-    {
-      if(argc < 6)
-        terminate_args();
-
-      strcpy(All.RemoveBase, argv[5]);
-    }
-
   if(All.Usage == 9)
     {
       if(argc < 7)

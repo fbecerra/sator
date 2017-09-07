@@ -131,14 +131,14 @@ void remove_part()
 
   memset(fill, 0, SIZE_FILL * sizeof(char));
 
-  sprintf(snapdir, "%s/%s", All.Path, All.RemoveBase);
+  sprintf(snapdir, "%s/%s", All.Path, All.Base);
 
   mkdir(snapdir, 0755);
 
   if(All.RemoveCosm)
-    sprintf(All.SnapFile, "%s/%s/%s_ic", All.Path, All.RemoveBase, All.RemoveBase);
+    sprintf(All.SnapFile, "%s/%s/%s_ic", All.Path, All.Base, All.Base);
   else
-    sprintf(All.SnapFile, "%s/%s/%s_900", All.Path, All.RemoveBase, All.RemoveBase);
+    sprintf(All.SnapFile, "%s/%s/%s_900", All.Path, All.Base, All.Base);
 
   if(NTask > 1)
     sprintf(All.SnapFile, "%s.%d", All.SnapFile, ThisTask);
