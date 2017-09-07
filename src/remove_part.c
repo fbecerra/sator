@@ -77,7 +77,7 @@ void remove_part()
     }
 
   for(block = 0; block < NUM_BLOCKS; block++)
-    cut_block(block);
+    remove_part_block(block);
 
   memset(NumPart, 0, NUM_PART_TYPES * sizeof(int));
 
@@ -170,7 +170,7 @@ void remove_part()
   SKIP;
 
   for(block = 0; block < NUM_BLOCKS; block++)
-    write_block(block);
+    write_part_block(block);
 
   myfree(PartFlag);
 }
