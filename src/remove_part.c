@@ -34,8 +34,8 @@ void remove_part()
 
   NumPartCut = NumGas;
 
-  /*if(All.CutDM)
-    NumPartCut += NumPart[1];*/
+  if(NumPart[5])
+    NumPartCut += NumPart[5];
 
   PartFlag = mymalloc_movable(&PartFlag, "PartFlag", NumPartCut * sizeof(int));
 
@@ -82,7 +82,7 @@ void remove_part()
   memset(NumPart, 0, NUM_PART_TYPES * sizeof(int));
 
   NumPart[0] = NumGasNew;
-  //NumPart[1] = NumPartNew - NumGasNew;
+  NumPart[5] = NumPartNew - NumGasNew;
 
   for(i = TotNumPart = 0; i < NUM_PART_TYPES; i++)
     TotNumPart += All.GlobNumPart[i];
@@ -221,9 +221,12 @@ void remove_part_block(int block)
 	  for(i = j = 0; i < NumPartCut; i++)
 	    if(PartFlag[i])
 	      {
-		PV.VX[j] = fac * (PV.VX[i] - CMVel[0]);
+		/*PV.VX[j] = fac * (PV.VX[i] - CMVel[0]);
 		PV.VY[j] = fac * (PV.VY[i] - CMVel[1]);
-		PV.VZ[j] = fac * (PV.VZ[i] - CMVel[2]);
+		PV.VZ[j] = fac * (PV.VZ[i] - CMVel[2]);*/
+                PV.VX[j] = fac * PV.VX[i];
+                PV.VY[j] = fac * PV.VY[i];
+                PV.VZ[j] = fac * PV.VZ[i];
 
 		j++;
 	      }
